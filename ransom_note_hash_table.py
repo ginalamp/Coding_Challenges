@@ -8,6 +8,9 @@ def main(magazine, ransom):
 
         @output print "Yes" or "No" (depending on whether the ransom could be formed from the words in the magazine)
     '''
+    # sorting optimises the searching function
+    magazine.sort()
+    ransom.sort()
 
     temp = []
     for word in ransom:
@@ -22,7 +25,7 @@ def main(magazine, ransom):
         print("Yes")
 
     # NOTE: issubset does not cater for duplicates (e.g. ransom = ["a", "a", "b"] and magazine = ["a", "b"] will return True
-    # if set(ransom).issubset(magazine):
+    # e.g: if set(ransom).issubset(magazine):
     #    print("Yes")
 
 

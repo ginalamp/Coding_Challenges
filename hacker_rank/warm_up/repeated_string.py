@@ -1,12 +1,14 @@
 '''
-    Given a string, a letter and an integer n, find and print the number that the given letter occurs in the first n letters of the infinite string.
-    The infinite string is defined as the given string that repeats an infinite amount of times.
+    Given a string, a letter and an integer n, find and print the number that the given letter occurs
+    in the first n letters of the infinite string.
 
-    e.g. 'aba' would become 'abaabaabaabaabaabaaba...' an "infinite amount of times. If one needed to find the number of a's in the first n=10 indices, the result would be 7.
+    The infinite string is defined as the given string that repeats an infinite amount of times.
+    e.g. 'aba' would become 'abaabaabaabaabaabaaba...' an "infinite amount of times.
+    If one needed to find the number of a's in the first n=10 indices, the result would be 7.
 
 '''
 
-def main(s, n):
+def main(s, letter, n):
     '''
         @param s - a String
         @param letter - character that should be counted
@@ -30,4 +32,4 @@ if __name__ == '__main__':
     s = 'kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm'
     letter = 'a'
     n = 736778906400
-    main(s, n)
+    main(s, letter, n)
